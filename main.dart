@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:first_unistaff_project/nav.dart';
+import 'package:unistaff_settings_project/edit.dart';
 void main() {
   runApp(MyApp());
 }
@@ -10,7 +10,8 @@ StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'UniStaff',
-      home: Nav(),
+      home: EditProfilePage(),
     );
   }
 }
+
