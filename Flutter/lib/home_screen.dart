@@ -42,6 +42,7 @@ class _LoginState extends State<Login> {
             child: TextField(
                     controller: nameController,
                     decoration: InputDecoration(
+                      border: OutlineInputBorder(),
                       icon: Icon(Icons.person),
                       labelText: 'User Name',
                     ),
@@ -68,6 +69,7 @@ class _LoginState extends State<Login> {
                     obscureText: true,
                     controller: passwordController,
                     decoration: InputDecoration(
+                      border: OutlineInputBorder(),
                       icon: Icon(Icons.password_outlined),
                       labelText: 'Password',
               ),
@@ -93,23 +95,22 @@ class _LoginState extends State<Login> {
                         print(passwordController.text);
                       },
                     )),
-                Container(
-                  child: Row(
-                    children: <Widget>[
-                      Text('Does not have account?'),
-                      FlatButton(
-                        textColor: Colors.lightGreenAccent,
-                        child: Text(
-                          'Sign in',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        onPressed: () {
-                          //signup screen
-                        },
-                      )
-                    ],
-                    mainAxisAlignment: MainAxisAlignment.center,
-                ))
+                Row(
+                  children: <Widget>[
+                    Text('Does not have account?'),
+                    FlatButton(
+                      textColor: Colors.lightGreenAccent,
+                      child: Text(
+                        'Sign in',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      onPressed: () {
+                        //signup screen
+                      },
+                    )
+                  ],
+                  mainAxisAlignment: MainAxisAlignment.center,
+                )
         ],
       ),
     );
