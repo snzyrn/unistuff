@@ -2,6 +2,10 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
 import 'image.dart';
+import 'signup.dart';
+import 'profile.dart';
+import 'menu.dart';
+import 'shopping_basket.dart';
 
 
 class Nav extends StatefulWidget {
@@ -16,9 +20,9 @@ class _NavState extends State<Nav> {
    final _icerikler = [
       //Kategori(kategori: ,),
       const Login(),
-      Login(),
-      Login(),
-      Login(),
+      Menu(),
+      ShoppingBasket(),
+      EditProfilePage(),
     ];
 
   void _onItemTap(int index) {
